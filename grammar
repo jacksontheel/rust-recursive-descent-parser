@@ -1,0 +1,8 @@
+expr        : fact addOperator expr
+            | fact
+fact        : sign num
+            | sign '(' expr ')'
+sign        : '-'
+            | ε
+addOperator : '+'
+            | '-'
